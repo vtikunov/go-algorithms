@@ -78,6 +78,14 @@ func Benchmark_longRoutines10x3_48go(b *testing.B) {
 	run(b, 10, 3, 48, longRoutines)
 }
 
+func Benchmark_oneTimeRoutines10x3_96go(b *testing.B) {
+	run(b, 10, 3, 96, oneTimeRoutines)
+}
+
+func Benchmark_longRoutines10x3_96go(b *testing.B) {
+	run(b, 10, 3, 96, longRoutines)
+}
+
 func Benchmark_oneTimeRoutines10x7_8go(b *testing.B) {
 	run(b, 10, 7, 8, oneTimeRoutines)
 }
@@ -108,4 +116,12 @@ func Benchmark_oneTimeRoutines10x7_48go(b *testing.B) {
 
 func Benchmark_longRoutines10x7_48go(b *testing.B) {
 	run(b, 10, 7, 48, longRoutines)
+}
+
+func Benchmark_oneTimeRoutines10x7_96go(b *testing.B) {
+	run(b, 10, 7, 96, oneTimeRoutines)
+}
+
+func Benchmark_longRoutines10x7_96go(b *testing.B) {
+	run(b, 10, 7, 96, longRoutines)
 }
